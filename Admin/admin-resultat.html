@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration - Résultats - Tournois de Judo</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="admin-dashboard.html" class="logo">
+                    <i class="fas fa-trophy"></i> Admin Judo
+                </a>
+                <ul class="navbar-menu">
+                    <li><a href="admin-classement.html">Classement</a></li>
+                    <li><a href="admin-resultat.html" class="active">Résultats</a></li>
+                    <li><a href="admin-calendrier.html">Calendrier</a></li>
+                    <li><a href="bord.php">Comptes Utilisateurs</a></li>
+                    <li><a href="Déconnexion.php">Déconnexion</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="admin-main">
+        <div class="container">
+            <h1>Gestion des Résultats</h1>
+            <form id="resultat-form" class="admin-form">
+                <div class="form-group">
+                    <label for="tournoi">Tournoi</label>
+                    <input type="text" id="tournoi" name="tournoi" required>
+                </div>
+                <div class="form-group">
+                    <label for="categorie">Catégorie</label>
+                    <select id="categorie" name="categorie" required>
+                        <option value="">Sélectionnez une catégorie</option>
+                        <option value="-60kg">-60kg</option>
+                        <option value="-66kg">-66kg</option>
+                        <option value="-73kg">-73kg</option>
+                        <option value="-81kg">-81kg</option>
+                        <option value="-90kg">-90kg</option>
+                        <option value="-100kg">-100kg</option>
+                        <option value="+100kg">+100kg</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="phase">Phase</label>
+                    <select id="phase" name="phase" required>
+                        <option value="">Sélectionnez une phase</option>
+                        <option value="Éliminatoires">Éliminatoires</option>
+                        <option value="Quarts de finale">Quarts de finale</option>
+                        <option value="Demi-finales">Demi-finales</option>
+                        <option value="Finale">Finale</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="judoka1">Judoka 1</label>
+                    <input type="text" id="judoka1" name="judoka1" required>
+                </div>
+                <div class="form-group">
+                    <label for="judoka2">Judoka 2</label>
+                    <input type="text" id="judoka2" name="judoka2" required>
+                </div>
+                <div class="form-group">
+                    <label for="score1">Score Judoka 1</label>
+                    <input type="text" id="score" name="score" required placeholder="ex: 10-0">
+                </div>
+                <div class="form-group">
+                    <label for="score2">Score Judoka 2</label>
+                    <input type="text" id="score" name="score" required placeholder="ex: 10-0">
+                </div>
+                <div class="form-group">
+                    <label for="gagnant">Gagnant</label>
+                    <input type="text" id="gagnant" name="gagnant" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Ajouter le Résultat</button>
+            </form>
+
+            <h2>Résultats Enregistrés</h2>
+            <table id="resultats-table" class="admin-table">
+                <thead>
+                    <tr>
+                        <th>Tournoi</th>
+                        <th>Catégorie</th>
+                        <th>Phase</th>
+                        <th>Judoka 1</th>
+                        <th>Judoka 2</th>
+                        <th>Score</th>
+                        <th>Gagnant</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Les résultats seront insérés ici par JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Administration des Tournois de Judo</p>
+        </div>
+    </footer>
+
+    <script src="../js/admin-resultats.js"></script>
+</body>
+</html>
+

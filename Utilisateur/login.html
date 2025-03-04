@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion / Inscription - Tournois de Judo</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <i class="fas fa-trophy"></i> Tournois de Judo
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="auth-container">
+            <h1>Connexion / Inscription</h1>
+            <div class="auth-options">
+                <button class="auth-btn google">
+                    <i class="fab fa-google"></i> Continuer avec Google
+                </button>
+                <button class="auth-btn microsoft">
+                    <i class="fab fa-microsoft"></i> Continuer avec Microsoft
+                </button>
+                <button class="auth-btn phone">
+                    <i class="fas fa-phone"></i> Continuer avec le téléphone
+                </button>
+            </div>
+            <div class="separator">
+                <span>ou</span>
+            </div>
+            <form id="login-form" action="login.php" method="post">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="submit-btn">Se connecter</button>
+            </form>
+            <p class="switch-form">
+                Pas encore de compte ? <a href="inscription.html" id="switch-to-signup">S'inscrire</a>
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Gestion de Tournoi de Judo</p>
+            <nav>
+                <a href="about.html">À propos</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Politique de confidentialité</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../js/login.js"></script>
+</body>
+</html>
+

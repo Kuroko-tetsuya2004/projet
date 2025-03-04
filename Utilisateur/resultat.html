@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultats des Matchs - Tournois de Judo</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-trophy"></i> Tournois de Judo
+                </a>
+                <button class="navbar-toggle" aria-label="Toggle navigation">
+                    <span class="navbar-toggle-icon"></span>
+                </button>
+                <ul class="navbar-menu">
+                    <li><a href="classement.php">Classement</a></li>
+                    <li><a href="calendrier.html">Calendrier</a></li>
+                    <li><a href="resultats.html" class="active">Résultats</a></li>
+                    <li><a href="login.html">Connexion</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="resultats">
+            <div class="container">
+                <h1>Résultats des Matchs de Judo</h1>
+                <div class="filtres">
+                    <select id="filtre-tournoi" aria-label="Filtrer par tournoi" name="tournoi">
+                        <option value="">2025</option>
+                    </select>
+                    <select id="filtre-tournoi" aria-label="Filtrer par tournoi" name="genre" value="Tous les genres">
+                        <option value="homme">Homme</option>
+                        <option value="femme">Femme</option>
+                    </select>
+                    <select id="filtre-categorie" aria-label="Filtrer par catégorie" name="categorie">
+                        <option value="">Toutes les catégories</option>
+                    </select>
+                </div>
+                <div class="resultats-list" id="resultats-list">
+                    <!-- Les résultats seront insérés ici par JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Gestion de Tournoi de Judo</p>
+            <nav class="footer-nav">
+                <a href="about.html">À propos</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Politique de confidentialité</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/resultats.js"></script>
+</body>
+</html>

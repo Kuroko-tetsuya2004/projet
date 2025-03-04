@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Tournois de Judo</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-trophy"></i> Tournois de Judo
+                </a>
+                <button class="navbar-toggle" aria-label="Toggle navigation">
+                    <span class="navbar-toggle-icon"></span>
+                </button>
+                <ul class="navbar-menu">
+                    <li><a href="classement.php">Classement</a></li>
+                    <li><a href="calendrier.html">Calendrier</a></li>
+                    <li><a href="resultat.html">Resultats</a></li>
+                    <li><a href="login.html" >Connexion</a></li>                   
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Bienvenue sur la plateforme de Tournois de Judo</h1>
+                <p>Suivez les compétitions, consultez les classements et restez informé des derniers événements de judo.</p>
+                <div class="cta-buttons">
+                    <a href="login.html" class="btn btn-secondary">S'inscrire</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="feature-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h2>Calendrier des Tournois</h2>
+                    <p>Consultez les dates et lieux des prochains tournois de judo.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-medal"></i>
+                    <h2>Classements en Direct</h2>
+                    <p>Suivez les classements mis à jour en temps réel pendant les compétitions.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-user-circle"></i>
+                    <h2>les résultats des matchs</h2>
+                    <p>Découvrez les statistiques et performances des judokas participants.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="tournois">
+            <div class="container">
+                <h1>Tournois à suivre</h1>
+                <div class="tournois-list" id="tournois-list">
+                    <!-- Les tournois seront insérés ici par JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Gestion de Tournoi de Judo</p>
+            <nav class="footer-nav">
+                <a href="about.html">À propos</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Politique de confidentialité</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/tournois.js"></script>
+</body>
+</html>
+

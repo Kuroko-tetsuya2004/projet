@@ -1,0 +1,206 @@
+/* Réinitialisation et styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Arial", sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+  }
+  
+  /* En-tête */
+  header {
+    background-color: #1a237e;
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo i {
+    margin-right: 10px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a.active {
+    color: #ffd54f;
+  }
+  
+  /* Contenu principal */
+  main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #1a237e;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  /* Filtres */
+  .filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .filter-group {
+    margin: 0 10px;
+  }
+  
+  label {
+    margin-right: 5px;
+  }
+  
+  select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Tableau de classement */
+  #classement-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #classement-table th,
+  #classement-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #classement-table th {
+    background-color: #1a237e;
+    color: #fff;
+  }
+  
+  #classement-table tbody tr:nth-child(even) {
+    background-color: #f8f8f8;
+  }
+  
+  #classement-table tbody tr:hover {
+    background-color: #e8e8e8;
+  }
+  
+  /* Pied de page */
+  footer {
+    background-color: #1a237e;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 40px;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  footer p {
+    margin-bottom: 0;
+  }
+  
+  footer nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  footer nav a:hover {
+    color: #ffd54f;
+  }
+  
+  /* Media queries pour la responsivité */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+    }
+  
+    nav ul {
+      margin-top: 20px;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  
+    .filters {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .filter-group {
+      margin: 10px 0;
+    }
+  
+    #classement-table {
+      font-size: 14px;
+    }
+  
+    #classement-table th,
+    #classement-table td {
+      padding: 8px;
+    }
+  
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    footer nav {
+      margin-top: 10px;
+    }
+  
+    footer nav a {
+      margin: 0 10px;
+    }
+  }
+  
+  

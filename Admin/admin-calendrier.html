@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration - Calendrier - Tournois de Judo</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="admin-dashboard.html" class="logo">
+                    <i class="fas fa-trophy"></i> Admin Judo
+                </a>
+                <ul class="navbar-menu">
+                    <li><a href="admin-classement.html">Classement</a></li>
+                    <li><a href="admin-resultat.html">Résultats</a></li>
+                    <li><a href="admin-calendrier.html" class="active">Calendrier</a></li>
+                    <li><a href="bord.php">Comptes Utilisateurs</a></li>
+                    <li><a href="Déconnexion.php">Déconnexion</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="admin-main">
+        <div class="container">
+            <h1>Gestion du Calendrier</h1>
+            <form id="calendrier-form" class="admin-form" method="post" action="calendrier.php">
+                <div class="form-group">
+                    <label for="tournoi">Judoka 1</label>
+                    <input type="text" id="tournoi" name="judoka1" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="lieu">heure</label>
+                    <input type="time" id="lieu" name="heure" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Judoka 2</label>
+                    <input type="text"  id="tournoi" name="judoka2" required></input>
+                </div>
+                <div class="form-group">
+                    <label for="description">Catégorie</label>
+                    <input type="text"  id="tournoi" name="categorie" required></input>
+                </div>
+                <button type="submit" class="btn btn-primary">Ajouter au Calendrier</button>
+            </form>
+
+            <h2>Calendrier des Tournois</h2>
+            <table id="calendrier-table" class="admin-table">
+                <thead>
+                    <tr>
+                        <th>Tournoi</th>
+                        <th>Date</th>
+                        <th>Lieu</th>
+                        <th>Description</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Les événements du calendrier seront insérés ici par JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Administration des Tournois de Judo</p>
+        </div>
+    </footer>
+
+    <script src="../js/admin-calendrier.js"></script>
+</body>
+</html>
+

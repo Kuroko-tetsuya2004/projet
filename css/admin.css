@@ -1,0 +1,96 @@
+.admin-main {
+  padding: 40px 0;
+}
+
+.admin-form {
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--gray);
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--gray);
+}
+
+.admin-table th {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.admin-table tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+.admin-table tr:hover {
+  background-color: #f0f0f0;
+}
+
+.btn-edit,
+.btn-delete {
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-edit {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.btn-delete {
+  background-color: #ff4d4d;
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .admin-table {
+    font-size: 14px;
+  }
+
+  .admin-table th,
+  .admin-table td {
+    padding: 8px;
+  }
+
+  .btn-edit,
+  .btn-delete {
+    padding: 3px 6px;
+    font-size: 12px;
+  }
+}
+
